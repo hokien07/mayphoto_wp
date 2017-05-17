@@ -1,0 +1,1357 @@
+/*
+Theme Name: mua may photo
+Theme URI: http://muamayphoto.net
+Description: This is just a BLANK starter WordPress Theme template -- WordPress v3.0.1
+Author: Chris Coyier
+Author URI: http://chriscoyier.net
+Version: 2
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+#page-wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*start header*/
+header {
+    width: 100%;
+    height: 575px;
+    background-color: #F9F9F9;
+}
+
+.inner-header {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.banner {
+    width: 100%;
+    height: 200px;
+}
+
+.logo {
+    width: 20%;
+    float: left;
+    margin-top: 40px;
+}
+
+.khau_hieu {
+    width: 55%;
+    float: left;
+    margin-top: 40px;
+    padding-left: 2%;
+}
+
+.khau_hieu h1 {
+    font-size: 260%;
+    font-weight: 900;
+    font-family: "Times New Roman";
+    color: #013CA0;
+}
+
+.khau_hieu h3 {
+    color: #013CA0;
+    font-size: 140%;
+    font-weight: 200;
+    font-family: sans-serif, Arial;
+}
+
+.phone {
+    width: 20%;
+    float: right;
+    margin-top: 40px;
+    padding-left: 2%;
+}
+
+.phone h4 {
+    font-size: 180%;
+    color: #920F0F;
+}
+
+.phone h4 i {
+    font-size: 180%;
+    color: #920F0F;
+}
+
+.phone h3 {
+    overflow: hidden;
+    font-size: 80%;
+    height: 30px;
+    border: 1px solid #54616c;
+    border-radius: 5px;
+}
+
+.phone h3 input {
+    width: 90%;
+    height: 100%;
+    border: 0;
+}
+
+.phone h3 a i {
+    font-size: 150%;
+    width: 10%;
+    background-color: #FFFFFF;
+}
+
+/*start menu*/
+nav {
+    width: 100%;
+    height: 45px;
+    background-color: rgba(38, 85, 255, 0.82);
+    text-align: center;
+}
+
+nav #menu-button {
+    display: none;
+}
+nav #logo_mobile {
+    display: none;
+}
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 45px;
+    border-left: 1px solid white;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 110%;
+    padding-left: 16px;
+    padding-right: 19px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+}
+
+.active {
+    background-color: #003DA1;
+}
+
+nav ul li:hover {
+    background-color: #003DA1;
+}
+
+/*start slidr*/
+.slider {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.slider-image {
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    width: 100%;
+    height: 300px;
+
+    animation-name: next-slide;
+    animation-duration: 16s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.slider-image:first-child {
+    animation-delay: 0s;
+}
+
+.slider-image:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.slider-image:nth-child(3) {
+    animation-delay: 6s;
+}
+
+.slider-image:nth-child(4) {
+    animation-delay: 9s;
+}
+
+.slider-image:nth-child(5) {
+    animation-delay: 12s;
+}
+
+@keyframes next-slide {
+    0% {
+        opacity: 0;
+    }
+    6.25% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    31.25% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.slider-nav {
+    left: 50%;
+    margin-left: -50px;
+    position: absolute;
+    top: 540px;
+    width: 100px;
+}
+
+.slider-nav .slider-nav-item {
+    background-color: red;
+    border-radius: 8px;
+    float: left;
+    height: 16px;
+    margin: 0 2px;
+    width: 16px;
+
+    animation-name: next-bullet;
+    animation-duration: 16s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes next-bullet {
+    0% {
+        background-color: red;
+    }
+    6.25% {
+        background-color: blue;
+    }
+    22% {
+        background-color: blue;
+    }
+    31.0% {
+        background-color: red;
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+.slider-nav-item:first-child {
+    animation-delay: 0s;
+}
+
+.slider-nav-item:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.slider-nav-item:nth-child(3) {
+    animation-delay: 6s;
+}
+
+.slider-nav-item:nth-child(4) {
+    animation-delay: 9s;
+}
+
+.slider-nav-item:nth-child(5) {
+    animation-delay: 12s;
+}
+
+/*start gioi-thieu*/
+#gioi-thieu {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #F9F9F9;
+}
+
+.inner-gioi-thieu {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-gioi-thieu {
+    width: 70%;
+    float: left;
+    margin-top: 20px;
+}
+
+.text-gioi-thieu h1 {
+    font-size: 260%;
+    font-weight: 900;
+    font-family: "Times New Roman";
+    color: #013CA0;
+}
+
+.text-gioi-thieu h2 {
+    font-size: 150%;
+    font-weight: 400;
+    font-family: "Times New Roman";
+    color: #013CA0;
+}
+
+.text-gioi-thieu p {
+    font-size: 200%;
+    font-family: "Times New Roman";
+    padding-left: 30px;
+}
+
+.ima-gioi-thieu {
+    width: 30%;
+    float: right;
+}
+
+/*satart san ơham*/
+#san-pham {
+    overflow: hidden;
+    clear: both;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.inner-san-pham {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content-san-pham {
+    width: 25%;
+    float: left;
+    border: 1px solid #F0EFED;
+    padding: 2%;
+    margin: 2%;
+    text-align: center;
+    height: 390px;
+    margin-top: 50px;
+}
+
+.content-san-pham h1 {
+    font-size: 250%;
+    font-family: "Times New Roman";
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: red;
+}
+
+.content-san-pham img {
+    width: 265px;
+    height: 330px;
+    margin-top: 20px;
+}
+
+.content-san-pham:hover {
+    border: 1px solid #777777;
+}
+
+/*start phan phoi*/
+#phan-phoi {
+    clear: both;
+    width: 100%;
+    background-color: #F9F9F9;
+    overflow: hidden;
+    height: 600px;
+}
+
+.inner-phan-phoi {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.inner-phan-phoi h1 {
+    font-size: 250%;
+    font-family: "Times New Roman";
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #013CA0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.inner-phan-phoi h4 {
+    font-size: 150%;
+    font-family: "Times New Roman";
+    font-weight: 400;
+    text-transform: uppercase;
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.inner-phan-phoi ul {
+    margin-top: 50px;
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+.inner-phan-phoi ul li {
+    line-height: 40px;
+    font-size: 150%;
+    font-weight: 500;
+    font-family: "Times New Roman";
+}
+
+.inner-phan-phoi h5 {
+    font-size: 150%;
+    font-family: "Times New Roman";
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #365eff;
+    text-align: center;
+    margin-top: 100px;
+}
+
+/*start dang ky*/
+#dang-ky {
+    clear: both;
+    margin-top: 40px;
+    overflow: hidden;
+    width: 100%;
+    height: 100px;
+    background-color: #EDEDED;
+}
+
+.inner-dangky {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.inner-dangky img {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.inner-dangky input {
+    width: 32%;
+    float: left;
+    margin-top: 30px;
+    line-height: 40px;
+    border-radius: 5px;
+    border: 1px solid #F9F9F9;
+}
+
+.inner-dangky button {
+    float: right;
+    margin-top: 30px;
+    line-height: 40px;
+    width: 15%;
+    border-radius: 5px;
+    border: 1px solid #F9F9F9;
+    font-size: 120%;
+    color: #FFFFFF;
+    background-color: #003DA1;
+}
+
+.inner-dangky h3 {
+    width: 40%;
+    float: left;
+    text-align: right;
+    font-size: 180%;
+    font-family: "Times New Roman";
+    font-style: italic;
+    line-height: 100px;
+    padding-right: 20px;
+}
+
+#footer {
+    width: 100%;
+    overflow: hidden;
+    background-color: #538ED5;
+}
+
+.inner-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 400px;
+}
+
+.box-address {
+    width: 40%;
+    float: left;
+    margin: 20px;
+    margin-top: 50px;
+}
+
+.box-address h3 {
+    font-size: 120%;
+    font-weight: bolder;
+    font-family: "Times New Roman";
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.box-address ul {
+    margin-top: 20px;
+    list-style-position: inside;
+    font-size: 120%;
+    color: #FFFFFF;
+    list-style-type: none;
+}
+
+.menu-footer {
+    overflow: hidden;
+    float: right;
+    width: 56%;
+    margin-top: 50px;
+}
+
+.menu-footer ul {
+    list-style-type: none;
+}
+
+.menu-footer ul li {
+    width: 33%;
+    float: left;
+}
+
+.menu-footer ul li h3 {
+    font-size: 120%;
+    font-weight: bolder;
+    font-family: "Times New Roman";
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.menu-footer ul li p {
+    font-size: 100%;
+    font-weight: 400;
+    font-family: "Times New Roman";
+    margin-top: 20px;
+}
+
+.menu-footer ul li p a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#copy-right {
+    clear: both;
+    width: 100%;
+    background-color: #306CB4;
+    overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+}
+
+.copyright {
+    width: 20%;
+    float: left;
+    padding-left: 20px;
+    text-align: right;
+    font-size: 120%;
+    font-weight: bold;
+    font-family: "Times New Roman";
+    color: #FFFFFF;
+}
+
+.thietke {
+    width: 20%;
+    float: left;
+    padding-left: 30px;
+    font-size: 120%;
+    font-weight: bold;
+    font-family: "Times New Roman";
+    color: #FFFFFF;
+}
+
+.social {
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+
+.social ul {
+    list-style-type: none;
+}
+
+.social ul li {
+    display: inline-block;
+    font-size: 200%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.social ul li a {
+    color: #FFFFFF;
+}
+
+/*starst screen*/
+@media only screen and (max-width: 1024px) {
+    header {
+        width: 100%;
+        height: 575px;
+        background-color: #F9F9F9;
+    }
+
+    .banner {
+        width: 100%;
+        height: 200px;
+    }
+
+    .logo {
+        width: 20%;
+        float: left;
+        margin-top: 40px;
+    }
+
+    .khau_hieu {
+        width: 45%;
+        float: left;
+        margin-top: 40px;
+        padding-left: 2%;
+    }
+
+    .khau_hieu h1 {
+        font-size: 200%;
+        font-weight: 900;
+        font-family: "Times New Roman";
+        color: #013CA0;
+    }
+
+    .khau_hieu h3 {
+        color: #013CA0;
+        font-size: 140%;
+        font-weight: 200;
+        font-family: sans-serif, Arial;
+    }
+
+    .phone {
+        width: 30%;
+        float: right;
+        margin-top: 40px;
+        padding-left: 2%;
+    }
+
+    .phone h4 {
+        font-size: 180%;
+        color: #920F0F;
+    }
+
+    .phone h4 i {
+        font-size: 180%;
+        color: #920F0F;
+    }
+
+    .phone h3 {
+        overflow: hidden;
+        font-size: 80%;
+        height: 30px;
+        border: 1px solid #54616c;
+        border-radius: 5px;
+    }
+
+    .phone h3 input {
+        width: 90%;
+        height: 100%;
+        border: 0;
+    }
+
+    .phone h3 a i {
+        font-size: 150%;
+        width: 10%;
+        background-color: #FFFFFF;
+    }
+
+    /*start menu*/
+    nav {
+        width: 100%;
+        height: 45px;
+        background-color: rgba(38, 85, 255, 0.82);
+        text-align: center;
+    }
+
+    nav ul {
+        list-style-type: none;
+    }
+
+    nav ul li {
+        display: inline-block;
+        line-height: 45px;
+        border-left: 1px solid white;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 100%;
+        padding-left: 9px;
+        padding-right: 10px;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-family: Arial, sans-serif;
+    }
+
+    .active {
+        background-color: #003DA1;
+    }
+
+    nav ul li:hover {
+        background-color: #003DA1;
+    }
+    /*gioi thiue*/
+    #gioi-thieu {
+        overflow: hidden;
+        width: 100%;
+        margin: 0 auto;
+        background-color: #F9F9F9;
+    }
+
+    .text-gioi-thieu {
+        width: 70%;
+        float: left;
+        margin-top: 20px;
+    }
+
+    .text-gioi-thieu h1 {
+        font-size: 230%;
+        padding-left: 20px;
+        font-weight: 900;
+        font-family: "Times New Roman";
+        color: #013CA0;
+    }
+
+    .text-gioi-thieu h2 {
+        font-size: 120%;
+        padding-left: 30px;
+        font-weight: 400;
+        font-family: "Times New Roman";
+        color: #013CA0;
+    }
+
+    .text-gioi-thieu p {
+        font-size: 180%;
+        font-family: "Times New Roman";
+        padding-left: 40px;
+    }
+
+    .ima-gioi-thieu {
+        width: 30%;
+        float: right;
+    }
+
+    /*start phan phoi*/
+
+    .inner-phan-phoi ul {
+        margin-top: 50px;
+        padding-left: 30px;
+        list-style-type: square;
+        list-style-position: inside;
+    }
+}
+@media only screen and (max-width: 768px){
+    header {
+        width: 100%;
+        height: 575px;
+        background-color: #F9F9F9;
+    }
+
+    .banner {
+        width: 100%;
+        height: 150px;
+    }
+
+    .logo {
+        width: 20%;
+        float: left;
+        margin-top: 40px;
+    }
+
+    .khau_hieu {
+        width: 45%;
+        float: left;
+        margin-top: 40px;
+        padding-left: 2%;
+    }
+
+    .khau_hieu h1 {
+        font-size: 150%;
+        font-weight: 900;
+        font-family: "Times New Roman";
+        color: #013CA0;
+    }
+
+    .khau_hieu h3 {
+        color: #013CA0;
+        font-size: 100%;
+        font-weight: 200;
+        font-family: sans-serif, Arial;
+    }
+
+    .phone {
+        width: 30%;
+        float: right;
+        margin-top: 40px;
+        padding-left: 2%;
+    }
+
+    .phone h4 {
+        font-size: 130%;
+        color: #920F0F;
+    }
+
+    .phone h4 i {
+        font-size: 130%;
+        color: #920F0F;
+    }
+
+    .phone h3 {
+        overflow: hidden;
+        font-size: 80%;
+        height: 30px;
+        border: 1px solid #54616c;
+        border-radius: 5px;
+    }
+
+    .phone h3 input {
+        width: 90%;
+        height: 100%;
+        border: 0;
+    }
+
+    .phone h3 a i {
+        font-size: 150%;
+        width: 10%;
+        background-color: #FFFFFF;
+    }
+
+    /*start menu*/
+    nav {
+        width: 100%;
+        height: 45px;
+        background-color: rgba(38, 85, 255, 0.82);
+        text-align: center;
+    }
+
+    nav ul {
+        list-style-type: none;
+    }
+
+    nav ul li {
+        display: inline-block;
+        line-height: 45px;
+        border-left: 1px solid white;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 70%;
+        font-weight: 400;
+        padding-left: 7px;
+        text-transform: uppercase;
+        font-family: Arial, sans-serif;
+    }
+
+    .active {
+        background-color: #003DA1;
+    }
+
+    nav ul li:hover {
+        background-color: #003DA1;
+    }
+    /*gioi thiue*/
+    #gioi-thieu {
+        overflow: hidden;
+        width: 100%;
+        margin: 0 auto;
+        background-color: #F9F9F9;
+    }
+
+    .text-gioi-thieu {
+        width: 70%;
+        float: left;
+        margin-top: 20px;
+    }
+
+    .text-gioi-thieu h1 {
+        font-size: 230%;
+        padding-left: 20px;
+        font-weight: 900;
+        font-family: "Times New Roman";
+        color: #013CA0;
+    }
+
+    .text-gioi-thieu h2 {
+        font-size: 120%;
+        padding-left: 30px;
+        font-weight: 400;
+        font-family: "Times New Roman";
+        color: #013CA0;
+    }
+
+    .text-gioi-thieu p {
+        font-size: 110%;
+        font-family: "Times New Roman";
+        padding-left: 40px;
+    }
+
+    .ima-gioi-thieu {
+        width: 30%;
+        float: right;
+    }
+
+    /*start phan phoi*/
+
+    .inner-phan-phoi ul {
+        margin-top: 50px;
+        padding-left: 30px;
+        list-style-type: square;
+        list-style-position: inside;
+    }
+    .inner-phan-phoi ul li {
+        font-size: 120%;
+    }
+
+
+    /*slider*/
+    .slider-nav {
+        left: 50%;
+        margin-left: -50px;
+        position: absolute;
+        top: 516px;
+        width: 100px;
+    }
+
+    /*satart san pham*/
+    #san-pham {
+        overflow: hidden;
+        clear: both;
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+
+    .content-san-pham {
+        width: 25%;
+        float: left;
+        border: 1px solid #F0EFED;
+        padding: 2%;
+        margin: 2%;
+        text-align: center;
+        height: 295px;
+        margin-top: 50px;
+    }
+
+    .content-san-pham h1 {
+        font-size: 250%;
+        font-family: "Times New Roman";
+        font-weight: bolder;
+        text-transform: uppercase;
+        color: red;
+    }
+
+    .content-san-pham img {
+        width: 265px;
+        height: 225px;
+        margin-top: 20px;
+    }
+
+    .content-san-pham:hover {
+        border: 1px solid #777777;
+    }
+    /*footer*/
+    .box-address {
+       margin: 0;
+        width: 100%;
+        margin-top: 50px;
+        text-align: left;
+        padding-left: 20px;
+    }
+    .menu-footer {
+        margin: 0;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin-top: 50px;
+        padding-left: 20px;
+    }
+    .copyright {
+        width: 20%;
+        float: left;
+        padding-left: 20px;
+        text-align: right;
+        font-size: 60%;
+        font-weight: bold;
+        font-family: "Times New Roman";
+        color: #FFFFFF;
+    }
+    .thietke {
+        width: 20%;
+        float: left;
+        padding-left: 30px;
+        font-size: 45%;
+        font-weight: bold;
+        font-family: "Times New Roman";
+        color: #FFFFFF;
+    }
+}
+@media only screen and (max-width: 640px){
+    header {
+        width: 100%;
+        height: 575px;
+        background-color: #F9F9F9;
+    }
+
+    .banner {
+        width: 100%;
+        height: 120px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .khau_hieu {
+        width: 50%;
+        float: left;
+        margin-top: 40px;
+        padding-left: 2%;
+    }
+
+    .khau_hieu h1 {
+        font-size: 140%;
+        font-weight: 900;
+        font-family: "Times New Roman";
+        color: #013CA0;
+    }
+
+    .khau_hieu h3 {
+        color: #013CA0;
+        font-size: 100%;
+        font-weight: 200;
+        font-family: sans-serif, Arial;
+    }
+
+    .phone {
+        width: 40%;
+        float: right;
+        margin-top: 40px;
+        padding-left: 2%;
+    }
+
+    .phone h4 {
+        font-size: 130%;
+        color: #920F0F;
+    }
+
+    .phone h4 i {
+        font-size: 130%;
+        color: #920F0F;
+    }
+
+    .phone h3 {
+        overflow: hidden;
+        font-size: 80%;
+        height: 30px;
+        border: 1px solid #54616c;
+        border-radius: 5px;
+    }
+
+    .phone h3 input {
+        width: 90%;
+        height: 100%;
+        border: 0;
+    }
+
+    .phone h3 a i {
+        font-size: 150%;
+        width: 10%;
+        background-color: #FFFFFF;
+    }
+
+    /*start menu*/
+    nav {
+        width: 100%;
+        height: 45px;
+        text-align: center;
+        position: relative;
+        background-color: #F9F9F9;
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: none;
+    }
+
+    nav #menu-button {
+        display: block;
+        height: 45px;
+        width: 100px;
+        float: right;
+        font-size: 140%;
+        font-weight: 600;
+        font-family: "Times New Roman";
+        font-style: italic;
+        position: absolute;
+        right: 10px;
+        background-color: #003DA1;
+        color: #FFFFFF;
+        border: 0;
+        border-radius: 20px;
+    }
+    nav:hover ul{
+        display: inline-block;
+        position: absolute;
+        top: 40px;
+        right: 30px;
+        background-color: #003DA1;
+        z-index: 1000;
+        width: 50%;
+        border-radius: 50px;
+    }
+    nav ul li {
+        width: 80%;
+        border-radius: 50px;
+        font-size: 150%;
+        font-style: italic;
+        font-family: "Times New Roman";
+        border: none;
+    }
+    nav ul li a:hover {
+        color: saddlebrown;
+    }
+    nav #logo_mobile {
+        display: inline-block;
+        float: left;
+        height: 45px;
+        width: 200px;
+        padding: 5px;
+    }
+    /*gioi thiue*/
+    #gioi-thieu {
+        overflow: hidden;
+        width: 100%;
+        margin: 0 auto;
+        background-color: #F9F9F9;
+    }
+
+    .text-gioi-thieu {
+        width: 100%;
+        float: left;
+        margin-top: 20px;
+    }
+
+    .ima-gioi-thieu {
+      display: none;
+    }
+
+    .text-gioi-thieu h1 {
+        font-size: 230%;
+        padding-left: 20px;
+        font-weight: 900;
+        font-family: "Times New Roman";
+        color: #013CA0;
+    }
+
+    .text-gioi-thieu h2 {
+        font-size: 120%;
+        padding-left: 30px;
+        font-weight: 400;
+        font-family: "Times New Roman";
+        color: #013CA0;
+    }
+
+    .text-gioi-thieu p {
+        font-size: 110%;
+        font-family: "Times New Roman";
+        padding-left: 40px;
+    }
+
+    /*san pham */
+    #san-pham {
+        width: 100%;
+    }
+    .content-san-pham {
+        display: block;
+        margin: 50px 0px 0px 15%;
+        padding: 0;
+        width: 70%;
+        text-align: center;
+    }
+    /*start phan phoi*/
+    .inner-phan-phoi ul {
+        margin-top: 50px;
+        padding-left: 30px;
+        list-style-type: square;
+        list-style-position: inside;
+    }
+    .inner-phan-phoi ul li {
+        font-size: 100%;
+    }
+
+    .inner-phan-phoi h5 {
+        font-size: 130%;
+    }
+    /*dangky*/
+    .inner-dangky h3 {
+        width: 30%;
+        float: left;
+        text-align: right;
+        font-size: 120%;
+        font-family: "Times New Roman";
+        font-style: italic;
+        line-height: 100px;
+        padding-right: 20px;
+    }
+
+    /*footer*/
+    .copyright {
+        width: 50%;
+        float: left;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+    }
+    .copyright p {
+        font-size: 150%;
+    }
+    .thietke {
+        width: 50%;
+        float: right;
+        margin: 0;
+        padding: 0;
+        text-align: right;
+    }
+    .thietke p {
+        font-size: 150%;
+    }
+    .social {
+        display: none;
+    }
+}
+@media only screen and (max-width: 480px){
+
+    .banner {
+        width: 100%;
+        height: 200px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .khau_hieu {
+        width: 100%;
+        margin-top: 40px;
+        padding-left: 2%;
+    }
+
+    .khau_hieu h1 {
+        font-size: 140%;
+        font-weight: 900;
+        font-family: "Times New Roman";
+        color: #013CA0;
+    }
+
+    .khau_hieu h3 {
+        color: #013CA0;
+        font-size: 100%;
+        font-weight: 200;
+        font-family: sans-serif, Arial;
+    }
+
+    .phone {
+        width: 100%;
+        float: right;
+        margin-top: 40px;
+        padding-left: 2%;
+    }
+
+    .phone h4 {
+        font-size: 130%;
+        color: #920F0F;
+    }
+
+    .phone h4 i {
+        font-size: 130%;
+        color: #920F0F;
+    }
+
+    .phone h3 {
+        overflow: hidden;
+        font-size: 80%;
+        height: 30px;
+        border: 1px solid #54616c;
+        border-radius: 5px;
+    }
+
+    .phone h3 input {
+        width: 90%;
+        height: 100%;
+        border: 0;
+    }
+
+    .phone h3 a i {
+        font-size: 150%;
+        width: 10%;
+        background-color: #FFFFFF;
+    }
+
+    .inner-gioi-thieu h1 {
+        font-size: 140%;
+    }
+
+    .inner-phan-phoi h1 {
+        font-size: 140%;
+    }
+    .inner-phan-phoi h4 {
+        font-size: 90%;
+    }
+    .inner-phan-phoi ul li {
+        font-size: 80%;
+    }
+    .inner-phan-phoi h5 {
+        font-size: 90%;
+    }
+
+    .inner-dangky img {
+        width:100px;
+        height: 100px;
+    }
+    .inner-dangky h3 {
+        display: none;
+    }
+    .inner-dangky input {
+        text-align: right;
+        width: 55%;
+    }
+    .inner-dangky button {
+        width: 100px;
+        height: 50px;
+        line-height: 20px;
+        font-size: 80%;
+    }
+}
+@media only screen and (max-width: 320px){
+    nav:hover ul{
+        display: inline-block;
+        position: absolute;
+        top: 40px;
+        right: 30px;
+        background-color: #003DA1;
+        z-index: 1000;
+        width: 70%;
+        border-radius: 50px;
+    }
+
+    .inner-dangky input {
+        text-align: right;
+        width: 37%;
+    }
+    .inner-dangky button {
+        width: 100px;
+        height: 43px;
+        line-height: 20px;
+        font-size: 80%;
+    }
+}
